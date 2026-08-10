@@ -13,7 +13,7 @@ const App = () => {
 
   const getAllPost = async() => {
     try {
-      const resp = await axios.get("http://localhost:3000/api/v1/post")
+      const resp = await axios.get("https://crud-operation-backend-and-fronted-pink.vercel.app/api/v1/post")
       // console.log(resp.data.data);
       setPost(resp.data.data)
       
@@ -32,7 +32,7 @@ const App = () => {
     // console.log(postId);
 
     try {
-      const resp = await axios.delete(`http://localhost:3000/api/v1/post/${postId}`)
+      const resp = await axios.delete(`https://crud-operation-backend-and-fronted-pink.vercel.app/api/v1/post/${postId}`)
       alert("post delete")
       getAllPost()
       
@@ -53,7 +53,7 @@ const App = () => {
     // console.log(postId);
 
     try {
-      const resp = await axios.put(`http://localhost:3000/api/v1/post/${postId}` , {
+     const resp = await axios.put(`https://crud-operation-backend-and-fronted-pink.vercel.app/api/v1/post/${postId}` , {
         title: editTitle,
         description: editDesc,
       })

@@ -20,7 +20,8 @@ const Form = ({getAllPost}) => {
         }
 
         try {
-            const resp = await axios.post("http://localhost:3000/api/v1/post" , {
+            const resp = await axios.post("https://crud-operation-backend-and-fronted-pink.vercel.app/api/v1/post"
+             , {
                 title: titleRef.current.value,
                 description: descriptionRef.current.value
             })
