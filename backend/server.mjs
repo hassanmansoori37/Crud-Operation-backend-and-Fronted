@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 
 app.use(cors({
-  origin: "https://crud-operation-backend-and-fronted.vercel.app/", 
+  origin: "https://crud-operation-backend-and-fronted.vercel.app", 
   methods: "*"
     
 }))
